@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     padding: 0px 25px;
     position: absolute;
     height: 70px;
@@ -25,7 +25,9 @@ header h1 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 500;
-
+}
+section {
+    width: 100vw;
 }
 .bolinha {
     margin-right: 20px;
@@ -37,6 +39,7 @@ header h1 {
 nav {
     margin-right: 50px;
 
+
 }
 nav ul {
     list-style: none;
@@ -44,11 +47,18 @@ nav ul {
 }
 nav li {
     margin: 0px 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    padding: 5px 0px;
     
+}
+nav li:hover {
+    border-bottom: 2px solid white;
 }
 nav li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
+
+    text-transform: none;
 }
 
 .presentation {
@@ -119,13 +129,13 @@ nav li a {
     width: 400px;
     height: 500px;
     border-radius: 50px;
-    background-color: #a88464de;
+    background-color: #a88464a1;
     backdrop-filter: blur(2px)
 }
 .presentation-info h2 {
     font-size: 35px;
 }
-.presentation-info h2, p {
+.presentation-info h2, .presentation-info p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,9 +152,50 @@ nav li a {
 .presentation-social button {
     font-size: 18px;
     background-color: #a88464de;
-    border: 1px solid white;
+    border: none;
+    border-radius: 20px;
+    outline: none;
     width: 100%;
     height: 40px;
     margin: 5px 0px ;
     cursor: pointer;
+}
+.presentation-social button:hover {
+    background-color: #b98c65;
+}
+.dark-bg {
+    background-color: #8C6751;
+}
+.light-bg {
+    background-color: #A68D77;
+}
+
+
+
+
+
+.desc {
+    margin: 0px 80px;
+
+    padding: 30px;
+    height: 300px;
+}
+.desc p {
+    width: ;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.desc h2 {
+    
+}
+
+
+.dark-title, .light-title  {
+    text-align: center;
+    color: #402A1E;
+    margin-bottom: 30px;
+}
+
+.light-title {
+    color: #eee6df;
 }
