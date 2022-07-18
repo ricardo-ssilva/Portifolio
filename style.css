@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0px 25px;
+    position: absolute;
+    height: 70px;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.432);
+}
+header h1 {
+    display: flex;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.bolinha {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #a88464;
+}
+nav {
+    margin-right: 50px;
+
+}
+nav ul {
+    list-style: none;
+    display: flex; 
+}
+nav li {
+    margin: 0px 5px;
+    
+}
+nav li a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+.presentation {
+    /* height: calc(100vh - 140px);
+    width: calc(100vw - 140px); */
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/aerial-background-cafe-coffee-communication-composer-1452989-pxhere.com.jpg);
+    background-size: cover;
+    background-position: top;
+   
+}
+.banner {
+   height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(8px)
+   
+}
+.presentation-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.presentation-img  img {
+    border-radius: 50%;
+    height: 300px;
+    width: auto;
+}
+.presentation-img-social{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.presentation-img-social ul  {
+    list-style: none;
+    display: flex;
+}
+.presentation-img-social img {
+    width: auto;
+    color: white;
+    height: 35px;
+    margin: 30px 10px;
+ 
+}
+
+.presentation-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+.presentation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+    background-color: #a88464de;
+    backdrop-filter: blur(2px)
+}
+.presentation-info h2 {
+    font-size: 35px;
+}
+.presentation-info h2, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.presentation-social {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.presentation-social button {
+    font-size: 18px;
+    background-color: #a88464de;
+    border: 1px solid white;
+    width: 100%;
+    height: 40px;
+    margin: 5px 0px ;
+    cursor: pointer;
+}
