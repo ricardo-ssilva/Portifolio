@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    /* color: white; */
     font-family: sans-serif;
     text-decoration: none;
 }
@@ -18,13 +18,20 @@ header {
     height: 70px;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.432);
+    
 }
 header h1 {
-    display: flex;
-    align-items: center;
+  
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     font-weight: 500;
+    
+}
+header h1  a{
+    display: flex;
+    align-items: center;
+    color: white;
+ 
 }
 section {
     width: 100vw;
@@ -57,7 +64,7 @@ nav li:hover {
 nav li a {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 700;
-
+    color: white;
     text-transform: none;
 }
 
@@ -69,7 +76,7 @@ nav li a {
     background-image: url(images/aerial-background-cafe-coffee-communication-composer-1452989-pxhere.com.jpg);
     background-size: cover;
     background-position: top;
-   
+    color: white;
 }
 .banner {
    height: 100%;
@@ -78,7 +85,7 @@ nav li a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.24);
+    background-color: rgba(0, 0, 0, 0.568);
     backdrop-filter: blur(8px)
    
 }
@@ -158,10 +165,14 @@ nav li a {
     width: 100%;
     height: 40px;
     margin: 5px 0px ;
+    
     cursor: pointer;
 }
 .presentation-social button:hover {
     background-color: #b98c65;
+}
+button a {
+    color: white;
 }
 .dark-bg {
     background-color: #8C6751;
@@ -175,21 +186,19 @@ nav li a {
 
 
 .desc {
+    
     margin: 0px 80px;
 
-    padding: 30px;
-    height: 300px;
+    padding: 50px;
+    /* height: 300px; */
 }
 .desc p {
-    width: ;
-    text-align: center;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: justify;
     margin-bottom: 16px;
-}
-.desc h2 {
     
 }
-
-
 .dark-title, .light-title  {
     text-align: center;
     color: #402A1E;
@@ -199,3 +208,254 @@ nav li a {
 .light-title {
     color: #eee6df;
 }
+
+
+.projects-box {
+    display: flex;
+    flex-direction: column;
+}
+.projects-box img {
+    height: auto;
+    width: 600px;
+}
+.project-about  {
+    display: flex;
+    margin: 30px 25px;
+}
+.right-pos {
+    justify-content: flex-end;
+}
+
+.projects-info {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+.select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select button{
+    width: 100px;
+    font-size: 15px;
+    padding: 8px;
+    border: none;
+    margin: 0px 2px;
+    background-color: #471c04;;
+    color: aliceblue;
+    cursor: pointer
+    
+}
+.select button:hover {
+    background-color: #2e1101;
+}
+/* 
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+
+} */
+/* 
+form input,#msg  {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    margin: 10px 0px;
+    width: 800px;
+    height: 40px;
+    padding: 10px 15px;
+}
+form #msg {
+    height: 120px;
+    resize: none;
+}
+
+form .submit {
+    
+} */
+
+footer {
+    width: 100vw;
+    text-align: center;
+    background-color: var(--third-gradient-color);
+    color: black;
+    
+}
+strong {
+    margin-left: 8px;
+}
+.page-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0px;
+}
+.page-info a {
+    color: black;
+}
+.page-info a:hover{
+    border-bottom: 1px black solid ;
+}
+
+
+@media (max-width: 1304px) {
+    .projects-box img {
+        width: 500px;
+    }
+    .desc p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 890px) {
+    .projects-box img {
+        width: 400px;
+    }
+    .desc p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .select button {
+        width: 80px;
+        font-size: 13px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .projects-info p {
+        display: none;
+    }
+    
+}
+@media (max-width: 805px) {
+    .projects-box img {
+        width: 300px;
+    }
+    .desc p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .presentation-img img {
+        width: 250px;
+        height: 250px;
+    }
+    .presentation-info {
+        width: 300px;
+        height: 400px;
+    }
+    .presentation-info h2 {
+        font-size: 20px;
+    }
+    .presentation-info p {
+        font-size: 15px;
+    }
+}
+@media (max-width: 705px) {
+    .projects-box img {
+        width: 200px;
+    }
+    .desc p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .select button {
+        width: 70px;
+        font-size: 13px;
+        padding: 3px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .projects-box img {
+        width: 150px;
+    }
+    .desc p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .presentation-img img {
+        width: 200px;
+        height: 200px;
+    }
+    .presentation-info {
+        width: 300px;
+        height: 400px;
+    }
+    .presentation-info h2 {
+        font-size: 18px;
+    }
+    .presentation-info p {
+        font-size: 14px;
+    }
+    .select button {
+        width: 60px;
+        font-size: 10px;
+        padding: 4px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 520px) {
+    .project-about {
+        margin: 0px;
+    }
+    .projects-box img {
+        width: 150px;
+    }
+    .desc  {
+        margin: 0px 10px ;
+    }
+    .desc p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .presentation-img img {
+        width: 150px;
+        height: 150px;
+    }
+    .presentation-info {
+        width: 250px;
+        height: 350px;
+    }
+    .presentation-info h2 {
+        font-size: 15px;
+    }
+    .presentation-info p {
+        font-size: 13px;
+    }
+    .select button {
+        width: 60px;
+        font-size: 10px;
+        padding: 3px;
+        margin-top: 10px;
+    }
+    nav {
+        display: none;
+    }
+    .projects-info {
+        /* display: none; */
+    }
+    .projects-info h3 {
+        font-size: 15px;
+    } 
+    .right-pos, .left-pos {
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media (max-width: 400px) {
+  .presentation-img {
+    display: none;
+  }
+  .desc  {
+    margin: 0px 3px ;
+}
+}
+
